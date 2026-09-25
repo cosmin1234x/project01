@@ -70,6 +70,7 @@ It's not just an assistant — it's an extension of your digital life.
 | 💻 Code Helper | Inline code review, debugging, and generation |
 | 🌐 Browser Control | Open URLs, navigate tabs, and interact with the browser by voice |
 | 📨 Send Message | Compose and send messages through WhatsApp, Telegram, and more |
+| 📞 WhatsApp Calls | "Call Bob and ask what he's doing" — places a WhatsApp voice call, holds the conversation, hangs up and tells you what they said (see setup below) |
 | 🎬 YouTube Control | Search, play, and control YouTube playback by voice |
 | 🖱️ Desktop Control | Taskbar, window management, and desktop-level operations |
 | 🧑‍💻 Silent Language Memory | Detects spoken language on first use — all future sessions adapt automatically |
@@ -287,6 +288,44 @@ python main.py
 `setup.py` only ever installs what your operating system needs — the Windows-only libraries are skipped automatically on macOS and Linux, and vice-versa. It also checks your Python version up front, so a wrong interpreter fails with a sentence instead of a wall of pip output. Prefer to do it by hand? `pip install -r requirements.txt` works too.
 
 > ⚠️ **Installation Note:** If you hit a `ModuleNotFoundError` for an OS-specific package, install it with `pip install <module_name>`. The optional **wake word** engine is *not* installed here — grab it in one click from **⚙ → WAKE WORD** inside the app.
+
+---
+
+## 📞 WhatsApp Calls — setup
+
+Say *"Call Bob and ask what he's doing"*. JARVIS opens WhatsApp Desktop, starts a
+voice call, talks to Bob with its own voice, hangs up, and tells you what Bob
+said (with a transcript in the log). You can keep talking to JARVIS while the
+call runs — the report arrives when it ends.
+
+WhatsApp only talks to sound devices, so the call is wired through two virtual
+audio cables (one for JARVIS's voice into the call, one for the call audio back
+to JARVIS). Your own mic and speakers are not touched.
+
+1. **Windows:** install [VB-CABLE and VB-CABLE A+B](https://vb-audio.com/Cable/) (free).
+   **macOS:** install [BlackHole](https://existential.audio/blackhole/) 2ch and 16ch.
+2. In **WhatsApp Desktop** → Settings → Calls (or the audio menu during a call) set:
+   - Microphone = `CABLE Output (VB-Audio Virtual Cable)` (macOS: `BlackHole 2ch`)
+   - Speaker = `CABLE-A Input (VB-Audio Cable A)` (macOS: `BlackHole 16ch`)
+3. That's it — JARVIS finds the matching ends (`CABLE Input`, `CABLE-A Output`)
+   automatically. To use other devices, add to `config/api_keys.json`:
+
+```json
+"plugin_config": {
+    "whatsapp_call": {
+        "voice_to_call_device":   "CABLE Input (VB-Audio Virtual Cable)",
+        "audio_from_call_device": "CABLE-A Output (VB-Audio Cable A)",
+        "max_call_seconds": 240,
+        "ring_timeout_seconds": 60
+    }
+}
+```
+
+Notes: WhatsApp Desktop must be installed and logged in, and the contact name
+must match how it is saved in WhatsApp (or give a phone number with country
+code). The call button is found on screen with Gemini vision, so leave the
+WhatsApp window visible. JARVIS introduces itself as your assistant and will
+never agree to anything on your behalf.
 
 ---
 
