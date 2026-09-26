@@ -55,8 +55,12 @@ setTimeout(ready, 3500);
 const hdr = $("#hdr");
 const burger = $(".hdr__burger");
 const nav = $("#hdr-nav");
-const onScroll = () => hdr.classList.toggle("is-solid", scrollY > 40);
+const onScroll = () => {
+  hdr.classList.toggle("is-solid", scrollY > 40);
+  document.documentElement.style.setProperty("--hdr-h", `${hdr.offsetHeight}px`);
+};
 addEventListener("scroll", onScroll, { passive: true });
+hdr.addEventListener("transitionend", onScroll);
 onScroll();
 function setNav(open) {
   burger.setAttribute("aria-expanded", String(open));
@@ -191,9 +195,15 @@ chaptersEl.addEventListener("click", (e) => {
   if (query) { query = ""; $("#search").value = ""; }
   renderChapters();
   renderPage();
-  if (innerWidth <= 1000) b.scrollIntoView({ block: "nearest", inline: "center", behavior: reduced ? "auto" : "smooth" });
-  const top = $(".book-ui").getBoundingClientRect().top;
-  if (top < 0) $(".book-ui").scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+  const smooth = reduced ? "auto" : "smooth";
+  if (innerWidth <= 1000) {
+    // Center the chosen chapter in the strip without moving the page vertically
+    chaptersEl.scrollTo({ left: b.parentElement.offsetLeft - (chaptersEl.clientWidth - b.offsetWidth) / 2, behavior: smooth });
+    const stage = $(".book-ui__stage");
+    if (stage.getBoundingClientRect().top < hdr.offsetHeight + chaptersEl.offsetHeight) stage.scrollIntoView({ behavior: smooth });
+  } else if ($(".book-ui").getBoundingClientRect().top < 0) {
+    $(".book-ui").scrollIntoView({ behavior: smooth });
+  }
 });
 chaptersEl.addEventListener("keydown", (e) => {
   const dir = e.key === "ArrowDown" || e.key === "ArrowRight" ? 1 : e.key === "ArrowUp" || e.key === "ArrowLeft" ? -1 : 0;

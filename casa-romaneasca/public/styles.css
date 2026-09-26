@@ -182,7 +182,7 @@ body.is-ready .hero__label, body.is-ready .hero__sub, body.is-ready .hero__cta {
 .chapters button[aria-selected="true"] i { color: var(--gold); }
 .chapters small { margin-left: auto; font: 600 .7rem var(--sans); color: var(--dim); }
 
-.book-ui__stage { perspective: 1800px; min-height: 560px; }
+.book-ui__stage { perspective: 1800px; min-height: 560px; min-width: 0; }
 .page { padding: clamp(26px, 4vw, 54px); transform-origin: left center; background: var(--wood-2); }
 .page.flip-out { animation: flipOut .32s ease-in forwards; }
 .page.flip-in { animation: flipIn .55s var(--ease); }
@@ -196,9 +196,9 @@ body.is-ready .hero__label, body.is-ready .hero__sub, body.is-ready .hero__cta {
 .dish { padding: 18px 0; border-bottom: 1px dashed var(--hair-2); display: grid; grid-template-columns: 1fr auto; gap: 4px 14px; animation: rise .5s var(--ease) both; animation-delay: calc(var(--i) * 35ms); }
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
 .dish__row { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 10px; }
-.dish__name { font: 600 1.28rem/1.2 var(--serif); }
+.dish__name { font: 600 1.28rem/1.2 var(--serif); min-width: 0; overflow-wrap: break-word; }
 .dish__row::after { content: ""; order: 2; flex: 1; border-bottom: 1px dotted rgba(214, 168, 82, .45); transform: translateY(-4px); min-width: 20px; }
-.dish__price { order: 3; font: 600 1.2rem/1 var(--serif); color: var(--gold-2); white-space: nowrap; }
+.dish__price { order: 3; flex: none; font: 600 1.2rem/1 var(--serif); color: var(--gold-2); white-space: nowrap; }
 .dish__desc { font-size: .88rem; color: var(--muted); line-height: 1.5; }
 .dish__desc b { color: var(--cream); font-weight: 600; }
 .dish__ctl { align-self: center; }
@@ -389,9 +389,15 @@ mark { background: none; color: var(--gold-2); border-bottom: 1px solid var(--go
   .hdr__right { margin-left: auto; }
   .picks { grid-template-columns: 1fr 1fr; }
   .pick--text { grid-column: 1 / -1; min-height: 0; }
-  .book-ui { grid-template-columns: 1fr; }
-  .book-ui__index { border-right: 0; border-bottom: 1px solid var(--hair); padding: 18px 0 0; }
-  .chapters { display: flex; overflow-x: auto; scrollbar-width: none; border-top: 1px solid var(--hair-2); }
+  .book-ui { grid-template-columns: minmax(0, 1fr); }
+  .book-ui__index { display: contents; }
+  .find { margin: 20px 18px 0; }
+  .toggles { margin: 14px 18px 16px; }
+  .chapters { display: flex; overflow-x: auto; scrollbar-width: none; border-block: 1px solid var(--hair); position: sticky; top: var(--hdr-h, 68px); z-index: 5; background: var(--wood-2); box-shadow: 0 10px 20px -14px #000; }
+  .chapters button i { min-width: 0; }
+  .book-ui__stage { min-height: 0; scroll-margin-top: calc(var(--hdr-h, 68px) + 56px); }
+  .page { padding: 22px 18px 30px; }
+  .page__head { flex-wrap: wrap; }
   .chapters::-webkit-scrollbar { display: none; }
   .chapters li { flex: none; }
   .chapters button { padding: 14px 16px; font-size: 1.05rem; white-space: nowrap; }
@@ -424,7 +430,19 @@ mark { background: none; color: var(--gold-2); border-bottom: 1px solid var(--go
   .dlg { padding: 0; align-items: end; }
   .dlg__panel { width: 100%; max-height: 92vh; border-width: 1px 0 0; animation-name: sheetIn; }
   @keyframes sheetIn { from { transform: translateY(100%); } }
-  .toast { top: auto; bottom: 90px; right: 12px; left: 12px; }
+  .toast { top: auto; bottom: 104px; right: 12px; left: 12px; }
+  .obar .btn { white-space: nowrap; letter-spacing: .14em; }
+  .dish__row::after { min-width: 8px; }
+  .tag { display: inline-block; margin: 4px 0 0; vertical-align: 0; }
+  .dish__name .tag:first-of-type { margin-left: 0; }
+  .dish__name { display: flex; flex-wrap: wrap; column-gap: 8px; align-items: baseline; }
+}
+@media (max-width: 380px) {
+  .hdr { padding-inline: 12px; gap: 8px; }
+  .brand__name { font-size: 1.05rem; }
+  .brand__mark { width: 28px; height: 28px; }
+  .hdr__phone { display: none; }
+  .obar__info { font-size: .8rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
