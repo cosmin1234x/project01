@@ -1,0 +1,1317 @@
+[
+ {
+  "id": "pizza",
+  "name": "Pizza",
+  "items": [
+   {
+    "id": "pizza-margherita",
+    "name": "Pizza Margherita",
+    "weight": "350 gr.",
+    "desc": "sos roșii, oregano, mozzarella",
+    "price": 36.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-perugia",
+    "name": "Pizza Perugia",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, ciuperci, piept pui, măsline",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-capricciosa",
+    "name": "Pizza Capricciosa",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, șuncă presată, ciuperci, măsline, roșii proaspete",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-cu-ton",
+    "name": "Pizza cu ton",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, ton, capere, ceapă roșie",
+    "price": 49.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-mexicana",
+    "name": "Pizza Mexicană",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, șuncă presată, ciuperci, ardei iute, măsline",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-vegetariana",
+    "name": "Pizza Vegetariană",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, ardei gras, porumb, ceapă roșie, măsline, ciuperci",
+    "price": 39.0,
+    "tags": [
+     "veg"
+    ],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-traditionala",
+    "name": "Pizza Tradițională",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, kaizer, cârnați, ciuperci, ardei gras, măsline",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-diavolo",
+    "name": "Pizza Diavolo",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, peperoncino, cârnați, măsline, ardei iute",
+    "price": 39.0,
+    "tags": [
+     "picant"
+    ],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-tiganeasca",
+    "name": "Pizza Țigănească",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, kaizer, ou fiert, usturoi, roșii, ciuperci",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-speciala",
+    "name": "Pizza Specială",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, kaizer, măsline, cârnați, ciuperci, șuncă presată",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-quattro-stagioni",
+    "name": "Pizza Quattro Stagioni",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, salam, măsline, ciuperci, șuncă presată, roșii proaspete",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-calzone",
+    "name": "Pizza Calzone",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, șuncă presată, ciuperci, măsline",
+    "price": 39.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-italiana",
+    "name": "Pizza Italiană",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, prosciutto crudo, parmezan, rucola",
+    "price": 49.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-u-s-a",
+    "name": "Pizza U.S.A.",
+    "weight": "450 gr.",
+    "desc": "sos roșii, oregano, mozzarella, cârnați proaspeți, cartofi prăjiți",
+    "price": 42.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "focaccia",
+    "name": "Focaccia",
+    "weight": "350 gr.",
+    "desc": "blat, specialități, ulei măsline, sare, oregano",
+    "price": 12.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "focaccia-cu-bacon",
+    "name": "Focaccia cu bacon",
+    "weight": "",
+    "desc": "blat, specialități, ulei măsline, sare, oregano, kaizer",
+    "price": 27.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "focaccia-cu-mozzarella",
+    "name": "Focaccia cu mozzarella",
+    "weight": "",
+    "desc": "blat, specialități, ulei măsline, sare, oregano, mozzarella",
+    "price": 27.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   },
+   {
+    "id": "pizza-quattro-formaggi",
+    "name": "Pizza Quattro Formaggi",
+    "weight": "",
+    "desc": "blat, specialități, mozzarella, parmezan, gorgonzola, cașcaval",
+    "price": 54.0,
+    "tags": [],
+    "off": false,
+    "pack": 2,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "paste",
+  "name": "Paste",
+  "items": [
+   {
+    "id": "spaghetti-alla-carbonara",
+    "name": "Spaghetti alla carbonara",
+    "weight": "",
+    "desc": "",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "spaghetti-bolognese",
+    "name": "Spaghetti bolognese",
+    "weight": "",
+    "desc": "",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "spaghetti-al-tonno",
+    "name": "Spaghetti al tonno",
+    "weight": "",
+    "desc": "",
+    "price": 40.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "rigatoni-al-forno",
+    "name": "Rigatoni al forno",
+    "weight": "",
+    "desc": "",
+    "price": 40.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "rigatoni-ai-4-formaggi",
+    "name": "Rigatoni ai 4 formaggi",
+    "weight": "",
+    "desc": "",
+    "price": 45.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "burger",
+  "name": "Burgeri",
+  "items": [
+   {
+    "id": "burger-carne-de-vita",
+    "name": "Burger carne de vită",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [
+     "recomandat"
+    ],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "mic-dejun",
+  "name": "Mic dejun",
+  "items": [
+   {
+    "id": "mamaliguta-cu-branza-si-smantana",
+    "name": "Mămăliguță cu brânză și smântână",
+    "weight": "",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "omleta-cu-sunca-si-cascaval-rosie-telemea-castraveti",
+    "name": "Omletă cu șuncă și cașcaval, roșie, telemea, castraveți",
+    "weight": "",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "omleta-taraneasca-kaizer-rosie-castraveti",
+    "name": "Omletă țărănească, kaizer, roșie, castraveți",
+    "weight": "",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "oua-ochi-cartofi-prajiti-si-carnaciori",
+    "name": "Ouă ochi, cartofi prăjiți și cârnăciori",
+    "weight": "",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "omleta-casa-romaneasca",
+    "name": "Omletă Casa Românească",
+    "weight": "",
+    "desc": "ouă, șuncă presată, cașcaval, legume, cu lipie libaneză",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "porc",
+  "name": "Preparate din porc",
+  "items": [
+   {
+    "id": "ceafa-porc-la-gratar",
+    "name": "Ceafă porc la grătar",
+    "weight": "230 gr.",
+    "desc": "",
+    "price": 30.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "ceafa-de-porc-cu-sos-de-cascaval",
+    "name": "Ceafă de porc cu sos de cașcaval",
+    "weight": "230/100 gr.",
+    "desc": "",
+    "price": 40.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "farfurie-picanta-cu-mamaliguta",
+    "name": "Farfurie picantă cu mămăliguță",
+    "weight": "230 gr.",
+    "desc": "",
+    "price": 37.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "carnaciori-proaspeti-prajiti",
+    "name": "Cârnăciori proaspeți, prăjiți",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 37.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "cordon-bleu",
+    "name": "Cordon bleu",
+    "weight": "230 gr.",
+    "desc": "",
+    "price": 30.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "pomana-porcului-cu-mamaliguta-si-ou-ochi",
+    "name": "Pomana porcului cu mămăliguță și ou ochi",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 40.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "bucati-la-garnita-cu-mamaliguta-si-ou-ochi",
+    "name": "Bucăți la garniță cu mămăliguță și ou ochi",
+    "weight": "",
+    "desc": "",
+    "price": 30.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "carnati-la-garnita-cu-mamaliguta-si-ou-ochi",
+    "name": "Cârnați la garniță cu mămăliguță și ou ochi",
+    "weight": "",
+    "desc": "",
+    "price": 30.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "tochitura-moldoveneasca",
+    "name": "Tochitură moldovenească",
+    "weight": "",
+    "desc": "",
+    "price": 40.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "pui",
+  "name": "Preparate din pui",
+  "items": [
+   {
+    "id": "piept-pui-la-gratar",
+    "name": "Piept pui la grătar",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 27.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "pulpe-dezosate-la-gratar",
+    "name": "Pulpe dezosate la grătar",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 27.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "piept-pui-cu-smantana-si-ciuperci",
+    "name": "Piept pui cu smântână și ciuperci",
+    "weight": "200/100 gr.",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "snitel-pane",
+    "name": "Șnițel pane",
+    "weight": "180 gr.",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "snitel-cu-fulgi-de-porumb",
+    "name": "Șnițel cu fulgi de porumb",
+    "weight": "180 gr.",
+    "desc": "",
+    "price": 32.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "quesadilla-cu-pui",
+    "name": "Quesadilla cu pui",
+    "weight": "250 gr.",
+    "desc": "",
+    "price": 28.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "burger-de-pui",
+    "name": "Burger de pui",
+    "weight": "",
+    "desc": "",
+    "price": 37.0,
+    "tags": [
+     "recomandat"
+    ],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-coaste-de-pui",
+    "name": "Meniu coaste de pui",
+    "weight": "",
+    "desc": "coaste de pui, cartofi prăjiți, salată de varză, sosuri",
+    "price": 37.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-aripioare-picante",
+    "name": "Meniu aripioare picante",
+    "weight": "",
+    "desc": "",
+    "price": 37.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-strips-de-pui",
+    "name": "Meniu strips de pui",
+    "weight": "",
+    "desc": "",
+    "price": 37.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-aripioare-picante-crispy",
+    "name": "Meniu aripioare picante & crispy",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-crispy-de-pui",
+    "name": "Meniu crispy de pui",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "orez-sarbesc-cu-piept-de-pui",
+    "name": "Orez sârbesc cu piept de pui",
+    "weight": "",
+    "desc": "",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "garnituri",
+  "name": "Garnituri",
+  "items": [
+   {
+    "id": "ciuperci-la-gratar",
+    "name": "Ciuperci la grătar",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "ciupercute-pane",
+    "name": "Ciupercuțe pane",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "orez-cu-legume-si-ciuperci",
+    "name": "Orez cu legume și ciuperci",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "cartofi-la-tava-cu-usturoi",
+    "name": "Cartofi la tavă cu usturoi",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "cartofi-prajiti",
+    "name": "Cartofi prăjiți",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "cartofi-prajiti-cu-branza",
+    "name": "Cartofi prăjiți cu brânză",
+    "weight": "200/50 gr.",
+    "desc": "",
+    "price": 18.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "cartofi-la-cuptor-cu-rozmarin",
+    "name": "Cartofi la cuptor cu rozmarin",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "legume-la-gratar",
+    "name": "Legume la grătar",
+    "weight": "",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "salate",
+  "name": "Salate",
+  "items": [
+   {
+    "id": "salata-asortata-rosii",
+    "name": "Salată asortată / roșii",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 10.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-de-rosii-cu-branza",
+    "name": "Salată de roșii cu brânză",
+    "weight": "250 gr.",
+    "desc": "",
+    "price": 12.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-de-varza",
+    "name": "Salată de varză",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 12.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-sfecla-rosie-cu-hrean",
+    "name": "Salată sfeclă roșie cu hrean",
+    "weight": "230 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-ardei-copt-cu-ceapa",
+    "name": "Salată ardei copt cu ceapă",
+    "weight": "250 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-muraturi-acrituri",
+    "name": "Salată murături/acrituri",
+    "weight": "200 gr.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "salate-speciale",
+  "name": "Salate speciale",
+  "items": [
+   {
+    "id": "salata-casa-romaneasca",
+    "name": "Salată Casa Românească",
+    "weight": "350 gr.",
+    "desc": "roșii, castraveți, măsline, mozzarella, focaccia, piept pui, salată verde",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-greceasca",
+    "name": "Salată grecească",
+    "weight": "350 gr.",
+    "desc": "salată verde, roșii, castraveți, ardei gras, ceapă, oregano, porumb, măsline",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-bulgareasca",
+    "name": "Salată bulgărească",
+    "weight": "350 gr.",
+    "desc": "salată verde, roșii, castraveți, ardei gras, ceapă, șuncă, ou, măsline, telemea",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-cu-gamberi",
+    "name": "Salată cu gamberi",
+    "weight": "350 gr.",
+    "desc": "salată verde, roșii, castraveți, gamberi, crutoane de pâine și dressing",
+    "price": 30.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-cu-piept-de-pui-crispy",
+    "name": "Salată cu piept de pui crispy",
+    "weight": "350 gr.",
+    "desc": "roșii, castraveți, măsline, piept de pui crispy, salată verde, crutoane de pâine și dressing",
+    "price": 35.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "salata-cu-ton",
+    "name": "Salată cu ton",
+    "weight": "",
+    "desc": "",
+    "price": 30.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "desert",
+  "name": "Deserturi",
+  "items": [
+   {
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "weight": "",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "papanasi-cu-dulceata-de-afine-si-smantana",
+    "name": "Papanași cu dulceață de afine și smântână",
+    "weight": "1 buc.",
+    "desc": "",
+    "price": 17.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "clatite-cu-crema-de-ciocolata",
+    "name": "Clătite cu cremă de ciocolată",
+    "weight": "",
+    "desc": "",
+    "price": 17.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "clatite-cu-dulceata",
+    "name": "Clătite cu dulceață",
+    "weight": "",
+    "desc": "",
+    "price": 17.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "eclere",
+    "name": "Eclere",
+    "weight": "3 buc.",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "clatite-la-cuptor-cu-urda-si-stafide",
+    "name": "Clătite la cuptor cu urdă și stafide",
+    "weight": "",
+    "desc": "",
+    "price": 20.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "clatite-cu-cacao-si-bucati-de-ciocolata",
+    "name": "Clătite cu cacao și bucăți de ciocolată",
+    "weight": "",
+    "desc": "",
+    "price": 20.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "papanas-cu-ciocolata-inghetata-de-vanilie-si-nuca",
+    "name": "Papanaș cu ciocolată, înghețată de vanilie și nucă",
+    "weight": "1 buc.",
+    "desc": "",
+    "price": 22.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "diverse",
+  "name": "Sosuri & extra",
+  "items": [
+   {
+    "id": "chifle",
+    "name": "Chifle",
+    "weight": "buc.",
+    "desc": "",
+    "price": 1.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "ardei-iute",
+    "name": "Ardei iute",
+    "weight": "buc.",
+    "desc": "",
+    "price": 2.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "mujdei",
+    "name": "Mujdei",
+    "weight": "50 gr.",
+    "desc": "",
+    "price": 2.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "maioneza",
+    "name": "Maioneză",
+    "weight": "50 gr.",
+    "desc": "",
+    "price": 2.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "smantana",
+    "name": "Smântână",
+    "weight": "50 gr.",
+    "desc": "",
+    "price": 3.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "hrean",
+    "name": "Hrean",
+    "weight": "50 gr.",
+    "desc": "",
+    "price": 3.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "ketchup",
+    "name": "Ketchup",
+    "weight": "50 gr.",
+    "desc": "",
+    "price": 2.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "mamaliguta",
+    "name": "Mămăliguță",
+    "weight": "250 gr.",
+    "desc": "",
+    "price": 5.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "racoritoare",
+  "name": "Răcoritoare",
+  "items": [
+   {
+    "id": "pepsi-cola",
+    "name": "Pepsi Cola",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "pepsi-twist",
+    "name": "Pepsi Twist",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "pepsi-max",
+    "name": "Pepsi Max",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "mirinda-orange",
+    "name": "Mirinda Orange",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "mountain-dew",
+    "name": "Mountain Dew",
+    "weight": "0,33 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "7up",
+    "name": "7UP",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "evervess-tonic",
+    "name": "Evervess Tonic",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 11.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "prigat-nectar",
+    "name": "Prigat Nectar",
+    "weight": "0,25 l",
+    "desc": "pere, piersică, portocale, kiwi, căpșuni și banane",
+    "price": 12.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "lipton-ice-tea",
+    "name": "Lipton Ice Tea",
+    "weight": "0,25 l",
+    "desc": "piersică, lămâie",
+    "price": 12.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "aqua-carpatica-plata",
+    "name": "Aqua Carpatica plată",
+    "weight": "0,33 l",
+    "desc": "",
+    "price": 10.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "aqua-carpatica-minerala",
+    "name": "Aqua Carpatica minerală",
+    "weight": "0,33 l",
+    "desc": "",
+    "price": 10.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   },
+   {
+    "id": "red-bull",
+    "name": "Red Bull",
+    "weight": "0,25 l",
+    "desc": "",
+    "price": 15.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0.5
+   }
+  ]
+ },
+ {
+  "id": "platouri",
+  "name": "Platouri",
+  "items": [
+   {
+    "id": "platou-mix-grill",
+    "name": "Platou mix grill",
+    "weight": "1 kg",
+    "desc": "ceafă de porc, cotlet, pulpă de pui dezosată, cârnăciori proaspeți, cartofi la tavă cu usturoi și salată de ardei copt",
+    "price": 220.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "platou-festiv",
+    "name": "Platou festiv",
+    "weight": "1,4 kg",
+    "desc": "salam uscat, șuncă Praga, telemea, cârnăciori, kaizer, pui crispy, măsline, cașcaval, roșii cherry, castraveți",
+    "price": 220.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "ciorbe",
+  "name": "Ciorbe",
+  "items": [
+   {
+    "id": "ciorba-de-burta",
+    "name": "Ciorbă de burtă",
+    "weight": "",
+    "desc": "",
+    "price": 23.0,
+    "tags": [],
+    "off": true,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "meniul-zilei",
+  "name": "Meniul zilei",
+  "items": [
+   {
+    "id": "meniul-zilei",
+    "name": "Meniul zilei",
+    "weight": "",
+    "desc": "",
+    "price": 25.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "meniuri-speciale",
+  "name": "Meniuri speciale",
+  "items": [
+   {
+    "id": "meniu-crispy",
+    "name": "Meniu crispy",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-aripioare-picante-2",
+    "name": "Meniu aripioare picante",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "meniu-mix-crispy-aripioare-picante",
+    "name": "Meniu mix crispy & aripioare picante",
+    "weight": "",
+    "desc": "",
+    "price": 38.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "bere",
+  "name": "Bere",
+  "items": [
+   {
+    "id": "bere-ursus",
+    "name": "Bere Ursus",
+    "weight": "0,33 l",
+    "desc": "",
+    "price": 8.5,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ },
+ {
+  "id": "vin",
+  "name": "Vin",
+  "items": [
+   {
+    "id": "vin-la-carafa-1-l",
+    "name": "Vin la carafă",
+    "weight": "1 l",
+    "desc": "",
+    "price": 25.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   },
+   {
+    "id": "vin-la-carafa-0-5-l",
+    "name": "Vin la carafă",
+    "weight": "0,5 l",
+    "desc": "",
+    "price": 15.0,
+    "tags": [],
+    "off": false,
+    "pack": 0,
+    "deposit": 0
+   }
+  ]
+ }
+]
