@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arch Cafe · All Day Brunch in Redruth</title>
+  <meta name="description" content="Arch Cafe in Redruth, Cornwall. All-day brunch, lángos, French toast and great coffee. Book a table online." />
+  <meta name="theme-color" content="#1f3d2b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3d2b'/%3E%3Cpath d='M14 50V32a18 18 0 0 1 36 0v18' fill='none' stroke='%23d9a441' stroke-width='5'/%3E%3Cpath d='M24 50V34M32 50V30M40 50V34' stroke='%23d9a441' stroke-width='4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Arch logo, reused throughout -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="arch" viewBox="0 0 64 48">
+      <path d="M6 46V28a26 26 0 0 1 52 0v18" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path d="M16 46V30a16 16 0 0 1 32 0v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M26 46V24M32 46V20M38 46V24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="leaf" viewBox="0 0 24 24">
+      <path d="M5 21c0-9 5-15 15-17-1 10-7 15-15 17Zm0 0 9-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Arch Cafe home">
+        <svg class="brand__mark"><use href="#arch"/></svg>
+        <span>Arch Cafe</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#book" class="btn btn--small">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Redruth · Cornwall</p>
+        <h1>All-day brunch,<br /><em>made with love.</em></h1>
+        <p class="lede">Hungarian lángos, stacked French toast, proper coffee and a warm welcome. Tucked into Kresen Kernow, Little Vauxhall.</p>
+        <div class="hero__cta">
+          <a href="#book" class="btn">Book a table</a>
+          <a href="#menu" class="btn btn--ghost">See the menu</a>
+        </div>
+        <div class="hero__rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><strong>4.8</strong> from 31 Google reviews</span>
+        </div>
+      </div>
+      <div class="hero__art">
+        <div class="arch-frame">
+          <img src="/img/porridge.jpg" alt="Creamy porridge topped with roasted plums, berries and a seeded brittle" width="408" height="544" />
+        </div>
+        <p class="hero__note">Good food.<br />Great coffee.<br />Happy people ♡</p>
+        <div class="badge">
+          <span>Doors open</span>
+          <strong>9:30am</strong>
+        </div>
+      </div>
+    </section>
+
+    <div class="ribbon" aria-label="Services">
+      <div class="ribbon__track">
+        <span>Dine in</span><span>✦</span><span>Takeaway</span><span>✦</span><span>Delivery</span><span>✦</span><span>Wheelchair accessible</span><span>✦</span><span>Vegetarian &amp; gluten-free options</span><span>✦</span>
+        <span aria-hidden="true">Dine in</span><span aria-hidden="true">✦</span><span aria-hidden="true">Takeaway</span><span aria-hidden="true">✦</span><span aria-hidden="true">Delivery</span><span aria-hidden="true">✦</span><span aria-hidden="true">Wheelchair accessible</span><span aria-hidden="true">✦</span><span aria-hidden="true">Vegetarian &amp; gluten-free options</span><span aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="about__grid">
+        <div class="about__photos">
+          <figure class="card-photo card-photo--a">
+            <img src="/img/langos.jpg" alt="Bacon and chorizo lángos with sour cream and crispy onions" loading="lazy" />
+          </figure>
+          <figure class="card-photo card-photo--b">
+            <img src="/img/french-toast.jpg" alt="Tiramisu French toast with chocolate ice cream and coffee sauce" loading="lazy" />
+          </figure>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Our little corner</p>
+          <h2>A bit of Central Europe, <br />in the heart of Cornwall.</h2>
+          <p>At Arch Cafe we serve brunch all day, so a late start is never a problem. Some of it is proper comfort food from home: golden Hungarian lángos, Slovak baked rice pudding. The rest is café classics done properly, like poached eggs on sourdough, a good BLT and a strong flat white.</p>
+          <p>Everything's made fresh, portions are generous and there's always something vegetarian or gluten-free on the board.</p>
+          <ul class="facts">
+            <li><strong>£10–20</strong><span>per person</span></li>
+            <li><strong>4.8★</strong><span>Google rating</span></li>
+            <li><strong>All day</strong><span>brunch menu</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+      <div class="section__head">
+        <svg class="section__arch"><use href="#arch"/></svg>
+        <p class="eyebrow">All day brunch</p>
+        <h2>The Menu</h2>
+        <p class="legend"><span class="tag tag--ve">VE</span> Vegetarian &nbsp; <span class="tag tag--gf">GF</span> Gluten free</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu sections">
+        <button role="tab" aria-selected="true" aria-controls="tab-savoury" id="t-savoury">Savoury</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-sandwiches" id="t-sandwiches" tabindex="-1">Sandwiches</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-sweet" id="t-sweet" tabindex="-1">Sweet</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-extras" id="t-extras" tabindex="-1">Extras</button>
+      </div>
+
+      <div class="menu__panel" role="tabpanel" id="tab-savoury" aria-labelledby="t-savoury">
+        <article class="dish">
+          <div class="dish__row"><h3>Bacon &amp; Chorizo Lángos</h3><span class="dots"></span><span class="price">£12.95</span></div>
+          <p>Hungarian fried flatbread with garlic, sour cream, cheese and crispy onions</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Mushroom &amp; Rocket Lángos <span class="tag tag--ve">VE</span></h3><span class="dots"></span><span class="price">£11.95</span></div>
+          <p>Fried flatbread with spring onions, cheese, sour cream, seeds and crispy onions</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Avocado Bliss <span class="tag tag--ve">VE</span></h3><span class="dots"></span><span class="price">£11.95</span></div>
+          <p>Toasted bread with poached eggs, sesame seeds, edamame, guacamole, rocket and balsamic glaze</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Eggs on Toast <span class="tag tag--ve">VE</span> <span class="tag tag--gf">GF</span></h3><span class="dots"></span><span class="price">£7.50</span></div>
+          <p>Poached, fried or scrambled</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Soup of the Day <span class="tag tag--ve">VE</span> <span class="tag tag--gf">GF</span></h3><span class="dots"></span><span class="price">£7.50</span></div>
+          <p>Served with toasted bread and butter</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Savoury French Toast <span class="tag tag--gf">GF</span></h3><span class="dots"></span><span class="price">£13.95</span></div>
+          <p>Crispy bacon, 2 poached eggs, melted Aleppo butter, chimichurri, mature cheddar, watercress and maple syrup</p>
+        </article>
+      </div>
+
+      <div class="menu__panel" role="tabpanel" id="tab-sandwiches" aria-labelledby="t-sandwiches" hidden>
+        <article class="dish">
+          <div class="dish__row"><h3>BLT</h3><span class="dots"></span><span class="price">£9.95</span></div>
+          <p>Bacon, rocket, tomato and mayo in sourdough or tiger bloomer, served with crisps</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Grilled Cheese</h3><span class="dots"></span><span class="price">£8.95</span></div>
+          <p>Mature cheddar and mozzarella on tiger bloomer, served with crisps</p>
+        </article>
+      </div>
+
+      <div class="menu__panel" role="tabpanel" id="tab-sweet" aria-labelledby="t-sweet" hidden>
+        <article class="dish">
+          <div class="dish__row"><h3>Banana Boost</h3><span class="dots"></span><span class="price">£11.20</span></div>
+          <p>Banana bread with yoghurt, candy seeds, caramelised banana, maple syrup and blueberries</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Tiramisu French Toast</h3><span class="dots"></span><span class="price">£12.95</span></div>
+          <p>Thick-cut brioche French toast with almond cream, chocolate ice cream, coffee sauce and amaretto crushed biscuits</p>
+        </article>
+        <article class="dish">
+          <div class="dish__row"><h3>Slovak Strawberry Baked Rice Pudding</h3><span class="dots"></span><span class="price">£10.50</span></div>
+          <p>Traditional Slovak dessert with strawberry compote</p>
+        </article>
+      </div>
+
+      <div class="menu__panel menu__panel--extras" role="tabpanel" id="tab-extras" aria-labelledby="t-extras" hidden>
+        <ul class="extras">
+          <li><span>Bacon</span><b>£2.50</b></li>
+          <li><span>Chorizo</span><b>£2.50</b></li>
+          <li><span>Avocado</span><b>£2.00</b></li>
+          <li><span>Egg</span><b>£1.50</b></li>
+          <li><span>Tomato</span><b>£1.50</b></li>
+          <li><span>Beans</span><b>£1.50</b></li>
+          <li><span>Cheese</span><b>£1.50</b></li>
+          <li><span>Mushrooms</span><b>£1.50</b></li>
+          <li><span>Bread</span><b>£1.50</b></li>
+          <li><span>Yoghurt</span><b>£1.50</b></li>
+        </ul>
+      </div>
+
+      <p class="menu__note">Allergies or dietary needs? Just ask, we're happy to help.</p>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="book section" id="book">
+      <div class="book__card">
+        <div class="book__intro">
+          <p class="eyebrow eyebrow--light">Reservations</p>
+          <h2>Save yourself a seat</h2>
+          <p>Book a table for brunch in a few clicks. We'll hold it for 15 minutes after your booking time.</p>
+          <ul class="book__perks">
+            <li><svg><use href="#leaf"/></svg> Walk-ins are always welcome too</li>
+            <li><svg><use href="#leaf"/></svg> Parties of 9 or more, please call us</li>
+            <li><svg><use href="#leaf"/></svg> Wheelchair-accessible entrance</li>
+          </ul>
+          <a class="book__phone" href="tel:+447576134385">☎ 07576 134385</a>
+        </div>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="form__step">
+            <span class="form__label" id="guests-label">Guests</span>
+            <div class="guests" role="radiogroup" aria-labelledby="guests-label">
+              <!-- filled by script.js -->
+            </div>
+          </div>
+
+          <div class="form__grid">
+            <label class="field">
+              <span>Date</span>
+              <input type="date" name="date" id="date" required />
+            </label>
+            <label class="field">
+              <span>Time</span>
+              <select name="time" id="time" required>
+                <option value="">Choose a date first</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" autocomplete="name" required maxlength="80" placeholder="Jane Trevithick" />
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder="07…" />
+            </label>
+            <label class="field field--wide">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required maxlength="120" placeholder="you@example.com" />
+            </label>
+            <label class="field field--wide">
+              <span>Anything we should know? <em>(optional)</em></span>
+              <textarea name="notes" rows="3" maxlength="500" placeholder="Allergies, high chair, birthday…"></textarea>
+            </label>
+          </div>
+
+          <p class="form__error" role="alert" hidden></p>
+          <button type="submit" class="btn btn--block">Request booking</button>
+        </form>
+
+        <div class="confirm" id="confirm" hidden tabindex="-1">
+          <svg class="confirm__arch"><use href="#arch"/></svg>
+          <h3>Booking received!</h3>
+          <p id="confirm-text"></p>
+          <p class="confirm__ref">Reference <strong id="confirm-ref"></strong></p>
+          <button class="btn btn--ghost-light" id="book-again" type="button">Make another booking</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit section" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow">Come say hello</p>
+          <h2>Find us</h2>
+          <dl>
+            <dt>Address</dt>
+            <dd>Kresen Kernow, Little Vauxhall<br />Redruth TR15 1AS</dd>
+            <dt>Opening hours</dt>
+            <dd id="hours-list"></dd>
+            <dt>Call us</dt>
+            <dd><a href="tel:+447576134385">07576 134385</a></dd>
+          </dl>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Arch+Cafe+Kresen+Kernow+Redruth+TR15+1AS">Get directions</a>
+        </div>
+        <div class="visit__map">
+          <iframe title="Map showing Arch Cafe at Kresen Kernow, Redruth" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Kresen%20Kernow%2C%20Little%20Vauxhall%2C%20Redruth%20TR15%201AS&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="footer__arch"><use href="#arch"/></svg>
+    <p class="footer__script">Good food · Great coffee · Happy people</p>
+    <p>Arch Cafe · Kresen Kernow, Little Vauxhall, Redruth TR15 1AS · <a href="tel:+447576134385">07576 134385</a></p>
+    <p class="footer__small">© <span id="year"></span> Arch Cafe</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
