@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amy's Kitchen &amp; Bar · Trevisky, Redruth</title>
+  <meta name="description" content="Amy's Kitchen & Bar in Trevisky, Redruth. All-day brunch, loaded fries, burgers, sharing boards and a sunny rooftop terrace. Book a table online." />
+  <meta name="theme-color" content="#e8a0b8" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23e8a0b8'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-style='italic' font-size='38' text-anchor='middle' fill='%232b2227'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="is-loading">
+  <div class="loader" aria-hidden="true">
+    <span class="loader__word">Amy's</span>
+    <span class="loader__bar"></span>
+  </div>
+
+  <div class="petals" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Amy's Kitchen and Bar home">
+        <span class="brand__script">Amy's</span>
+        <span class="brand__sub">Kitchen &amp; Bar</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button>
+      <nav id="nav-links" class="nav__links">
+        <a href="#menu">Menu</a>
+        <a href="#terrace">Terrace</a>
+        <a href="#visit">Visit</a>
+        <a href="#book" class="btn btn--small">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="kicker">Trevisky · Redruth · Cornwall</p>
+        <h1 class="split">
+          <span class="line"><span>Brunch,</span> <span>bites</span></span>
+          <span class="line"><span>&amp;</span> <em>something</em></span>
+          <span class="line"><em>pretty</em> <span>to sip.</span></span>
+        </h1>
+        <p class="lede">Big Cornish breakfasts, loaded fries, burgers and sharing boards, plus iced drinks worth photographing. Eat inside by our flower wall or up on the rooftop terrace.</p>
+        <div class="hero__cta">
+          <a href="#book" class="btn">Book a table <span class="btn__arrow">→</span></a>
+          <a href="#menu" class="btn btn--ghost">Explore the menu</a>
+        </div>
+        <ul class="stats">
+          <li><strong data-count="4.7" data-decimals="1">0</strong><span>Google rating</span></li>
+          <li><strong data-count="364">0</strong><span>happy reviews</span></li>
+          <li><strong>£10–20</strong><span>per person</span></li>
+        </ul>
+      </div>
+      <div class="hero__art">
+        <div class="blob">
+          <img src="/img/drinks.jpg" alt="Two layered iced pink lattes topped with whipped cream in front of a flower wall" width="900" height="1200" />
+        </div>
+        <div class="sticker sticker--a"><span>Brunch</span><b>served all day</b></div>
+        <div class="sticker sticker--b">★ 4.7</div>
+        <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+          <text><textPath href="#circle">KITCHEN · BAR · ROOFTOP TERRACE · REDRUTH · </textPath></text>
+        </svg>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Full Cornish</span><i>✿</i><span>Eggs Royale</span><i>✿</i><span>Loaded Fries</span><i>✿</i><span>Sharing Boards</span><i>✿</i><span>Cinnamon French Toast</span><i>✿</i><span>The Classic Burger</span><i>✿</i>
+        <span>Full Cornish</span><i>✿</i><span>Eggs Royale</span><i>✿</i><span>Loaded Fries</span><i>✿</i><span>Sharing Boards</span><i>✿</i><span>Cinnamon French Toast</span><i>✿</i><span>The Classic Burger</span><i>✿</i>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+      <div class="section__head reveal">
+        <p class="kicker">Something for everyone</p>
+        <h2>The <em>Menu</em></h2>
+        <p class="legend"><span class="tag">V</span> Vegetarian <span class="tag tag--vg">VG</span> Vegan</p>
+      </div>
+
+      <div class="tabs-wrap reveal">
+        <div class="tabs" role="tablist" aria-label="Menu sections"></div>
+      </div>
+
+      <div class="menu__panel" id="menu-panel" role="tabpanel" aria-live="polite"></div>
+
+      <p class="menu__note reveal">Please tell our staff about any allergies. We do our best to cater for most allergies, but we are not an allergen-free kitchen.</p>
+    </section>
+
+    <!-- TERRACE -->
+    <section class="terrace" id="terrace">
+      <div class="terrace__bg" style="background-image:url('/img/terrace.jpg')"></div>
+      <div class="terrace__card reveal">
+        <p class="kicker kicker--light">Up on the roof</p>
+        <h2>Brunch with a <em>view</em></h2>
+        <p>Our rooftop terrace has big wooden tables, open sky and Cornish greenery all around. It's the best seat in the house on a sunny day. Choose "Terrace" when you book and we'll try to seat you there, weather permitting.</p>
+        <a href="#book" class="btn btn--light">Reserve the terrace</a>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="book section" id="book">
+      <div class="section__head reveal">
+        <p class="kicker">Reservations</p>
+        <h2>Book a <em>table</em></h2>
+      </div>
+
+      <div class="book__wrap reveal">
+        <form class="form" id="booking-form" novalidate>
+          <fieldset class="form__block">
+            <legend>How many of you?</legend>
+            <div class="stepper">
+              <button type="button" class="stepper__btn" data-step="-1" aria-label="Fewer guests">−</button>
+              <output id="guests-out" aria-live="polite"><b>2</b> guests</output>
+              <button type="button" class="stepper__btn" data-step="1" aria-label="More guests">+</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__block">
+            <legend>Where would you like to sit?</legend>
+            <div class="seats">
+              <label class="seat">
+                <input type="radio" name="seating" value="Inside" checked />
+                <span class="seat__card"><span class="seat__icon">✿</span><b>Inside</b><small>by the flower wall</small></span>
+              </label>
+              <label class="seat">
+                <input type="radio" name="seating" value="Terrace" />
+                <span class="seat__card"><span class="seat__icon">☀</span><b>Terrace</b><small>weather permitting</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form__grid">
+            <label class="field">
+              <span>Date</span>
+              <input type="date" name="date" id="date" required />
+            </label>
+            <label class="field">
+              <span>Time</span>
+              <select name="time" id="time" required><option value="">Choose a date first</option></select>
+            </label>
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" autocomplete="name" required maxlength="80" placeholder="Your name" />
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder="07…" />
+            </label>
+            <label class="field field--wide">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required maxlength="120" placeholder="you@example.com" />
+            </label>
+            <label class="field field--wide">
+              <span>Special requests <em>(optional)</em></span>
+              <textarea name="notes" rows="3" maxlength="500" placeholder="Birthday, high chair, allergies…"></textarea>
+            </label>
+          </div>
+
+          <p class="form__error" role="alert" hidden></p>
+          <button type="submit" class="btn btn--block">Request my table <span class="btn__arrow">→</span></button>
+          <p class="form__small">Groups larger than 10? Pop in or message us and we'll sort you out.</p>
+        </form>
+
+        <div class="confirm" id="confirm" hidden tabindex="-1">
+          <div class="confirm__check" aria-hidden="true">
+            <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-16" /></svg>
+          </div>
+          <h3>You're booked in!</h3>
+          <p id="confirm-text"></p>
+          <p class="confirm__ref">Reference <strong id="confirm-ref"></strong></p>
+          <button class="btn btn--ghost" id="book-again" type="button">Make another booking</button>
+        </div>
+
+        <aside class="book__aside">
+          <img src="/img/drinks.jpg" alt="" loading="lazy" />
+          <div class="book__aside-text">
+            <p class="script">See you soon ♡</p>
+            <p>We hold tables for 15 minutes after your booking time. Walk-ins are always welcome.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit section" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info reveal">
+          <p class="kicker">Come find us</p>
+          <h2>Visit <em>Amy's</em></h2>
+          <dl>
+            <dt>Address</dt>
+            <dd>Trevisky, Redruth<br />Cornwall TR16 6AS</dd>
+            <dt>Opening hours</dt>
+            <dd id="hours-list"></dd>
+            <dt>Good to know</dt>
+            <dd>Dine-in · Wheelchair accessible · Rooftop terrace</dd>
+          </dl>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Amy%27s+Kitchen+%26+Bar+Trevisky+Redruth+TR16+6AS">Get directions <span class="btn__arrow">→</span></a>
+        </div>
+        <div class="visit__map reveal">
+          <iframe title="Map showing Amy's Kitchen and Bar in Trevisky, Redruth" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Amy's%20Kitchen%20%26%20Bar%2C%20Trevisky%2C%20Redruth%20TR16%206AS&z=15&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand">Amy's <span>Kitchen &amp; Bar</span></p>
+    <p>Trevisky, Redruth, Cornwall TR16 6AS</p>
+    <p class="footer__small">© <span id="year"></span> Amy's Kitchen &amp; Bar</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
