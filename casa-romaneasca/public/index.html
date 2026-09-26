@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casa Românească · Restaurant în Rovinari · Comandă online</title>
-  <meta name="description" content="Casa Românească din Rovinari: bucătărie românească, pizza, grătar și deserturi de casă. Comandă online cu livrare sau ridicare personală și rezervă o masă." />
-  <meta name="theme-color" content="#9e1b22" />
+  <title>Casa Românească · Restaurant, terasă și cazare în Rovinari</title>
+  <meta name="description" content="Casa Românească din Rovinari: restaurant cu bucătărie românească, terasă, cazare. Comandă online cu livrare sau ridicare, rezervă o masă sau o cameră." />
+  <meta name="theme-color" content="#14100e" />
   <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500;1,700&family=Alegreya+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -20,304 +20,313 @@
 
   <a class="skip" href="#meniu">Sari la meniu</a>
 
-  <header class="top">
-    <div class="top__inner">
-      <a href="#acasa" class="logo" aria-label="Casa Românească, acasă">
-        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#house" /></svg>
-        <span class="logo__text">Casa <b>Românească</b></span>
-      </a>
-      <nav class="top__nav" id="top-nav" aria-label="Navigare principală">
-        <a href="#recomandari">Recomandări</a>
-        <a href="#meniu">Meniu</a>
-        <a href="#rezervari">Rezervări</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="top__actions">
-        <a class="top__phone" href="tel:+40765466777" aria-label="Sună la 0765 466 777">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone" /></svg><span>0765 466 777</span>
-        </a>
-        <button class="cart-btn" type="button" aria-controls="cart" aria-expanded="false">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag" /></svg>
-          <span class="cart-btn__label">Coș</span>
-          <span class="cart-btn__count" id="cart-count">0</span>
-        </button>
-        <button class="burger" type="button" aria-controls="top-nav" aria-expanded="false" aria-label="Deschide meniul"><span></span><span></span><span></span></button>
-      </div>
+  <!-- HEADER -->
+  <header class="hdr" id="hdr">
+    <a href="#acasa" class="brand" aria-label="Casa Românească, acasă">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#house" /></svg>
+      <span class="brand__name">Casa Românească</span>
+    </a>
+    <nav class="hdr__nav" id="hdr-nav" aria-label="Navigare principală">
+      <a href="#meniu"><i>I</i>Meniu</a>
+      <a href="#terasa"><i>II</i>Terasa</a>
+      <a href="#cazare"><i>III</i>Cazare</a>
+      <a href="#rezervari"><i>IV</i>Rezervări</a>
+      <a href="#cariere"><i>V</i>Cariere</a>
+      <a href="#contact"><i>VI</i>Contact</a>
+    </nav>
+    <div class="hdr__right">
+      <a class="hdr__phone" href="tel:+40765466777" aria-label="Sună la restaurant: 0765 466 777"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone" /></svg><span>0765 466 777</span></a>
+      <button class="hdr__cart" type="button" id="cart-open" aria-haspopup="dialog" aria-label="Deschide comanda">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag" /></svg><span class="hdr__count" id="cart-count">0</span>
+      </button>
+      <button class="hdr__burger" type="button" aria-controls="hdr-nav" aria-expanded="false" aria-label="Meniu navigare"><span></span><span></span></button>
     </div>
   </header>
 
   <main id="acasa">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__stripe" aria-hidden="true"></div>
-      <div class="hero__content">
-        <p class="hero__eyebrow"><span>Rovinari · Gorj</span></p>
-        <h1 class="hero__title">
-          <span class="ln"><span>Gust de acasă,</span></span>
-          <span class="ln"><em>pus pe masă.</em></span>
-        </h1>
-        <p class="hero__lead">Mămăliguță cu brânză și smântână, tochitură, papanași, pizza din cuptor și grătar. Comandă online cu livrare sau ridicare personală, ori rezervă o masă la noi.</p>
+    <!-- HERO SLIDESHOW -->
+    <section class="hero" aria-label="Bun venit">
+      <div class="hero__slides" aria-hidden="true">
+        <div class="slide is-on" style="background-image:url('/img/ceafa.jpg')"></div>
+        <div class="slide" style="background-image:url('/img/terasa.jpg')"></div>
+        <div class="slide" style="background-image:url('/img/burger.jpg')"></div>
+      </div>
+      <div class="hero__veil"></div>
+      <div class="hero__frame" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__label"><span>Restaurant</span><span>Terasă</span><span>Cazare</span></p>
+        <h1 class="hero__title"><span class="w">Casa</span> <span class="w w--it">Românească</span></h1>
+        <div class="hero__stitch" aria-hidden="true"></div>
+        <p class="hero__sub">Bucătărie românească adevărată, în inima Rovinariului. Mâncare de casă, pizza și grătar, cu livrare, la pachet sau la masă.</p>
         <div class="hero__cta">
-          <a href="#meniu" class="btn btn--red">Comandă online</a>
-          <a href="#rezervari" class="btn btn--light">Rezervă o masă</a>
+          <a href="#meniu" class="btn btn--gold">Comandă online</a>
+          <a href="#rezervari" class="btn btn--line">Rezervă o masă</a>
         </div>
-        <ul class="hero__facts">
-          <li><b>109</b> preparate în meniu</li>
-          <li><b>25 lei</b> meniul zilei</li>
-          <li><b>Cash</b> sau card</li>
-        </ul>
       </div>
-      <div class="hero__media">
-        <img src="/img/ceafa.jpg" alt="Ceafă de porc cu piure și sos, servită pe masă de lemn" width="1000" height="1500" />
-        <div class="hero__badge"><span>Nou!</span> Plătește cash sau cu cardul</div>
+      <div class="hero__foot">
+        <div class="hero__dots" role="tablist" aria-label="Imagini">
+          <button type="button" aria-label="Imaginea 1" class="is-on"></button>
+          <button type="button" aria-label="Imaginea 2"></button>
+          <button type="button" aria-label="Imaginea 3"></button>
+        </div>
+        <a href="#usi" class="hero__scroll">Descoperă<span></span></a>
+        <p class="hero__count"><b id="slide-n">01</b> / 03</p>
       </div>
     </section>
 
-    <div class="band" aria-hidden="true"></div>
-
-    <!-- SERVICES -->
-    <section class="services" aria-label="Servicii">
-      <div class="service reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-truck" /></svg>
-        <h3>Livrare la domiciliu</h3>
-        <p>Mâncare caldă, adusă la ușa ta în Rovinari și împrejurimi.</p>
-      </div>
-      <div class="service reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag" /></svg>
-        <h3>Ridicare personală</h3>
-        <p>Comanzi online și treci să o iei când e gata, fără așteptare.</p>
-      </div>
-      <div class="service reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-table" /></svg>
-        <h3>Masă rezervată</h3>
-        <p>Pentru prânzuri în familie, zile de naștere sau o seară cu prietenii.</p>
-      </div>
+    <!-- THREE DOORS -->
+    <section class="doors" id="usi" aria-label="Ce găsești la noi">
+      <a class="door" href="#meniu" style="--img:url('/img/ceafa.jpg')">
+        <span class="door__n">I</span>
+        <span class="door__body"><b>Restaurant</b><em>109 preparate, de la mămăliguță la papanași</em></span>
+      </a>
+      <a class="door" href="#terasa" style="--img:url('/img/terasa.jpg')">
+        <span class="door__n">II</span>
+        <span class="door__body"><b>Terasa</b><em>Mese în familie, cu prietenii sau evenimente</em></span>
+      </a>
+      <a class="door" href="#cazare" style="--img:url('/img/cladire.jpg')">
+        <span class="door__n">III</span>
+        <span class="door__body"><b>Cazare</b><em>Camere cu Wi-Fi, TV și aer condiționat</em></span>
+      </a>
     </section>
 
-    <!-- RECOMANDĂRI -->
-    <section class="recs section" id="recomandari">
-      <header class="head reveal">
-        <p class="head__kicker">Bucătarul șef recomandă</p>
-        <h2>Recomandările casei</h2>
-      </header>
-      <div class="recs__grid">
-        <article class="rec rec--photo reveal" data-id="burger-carne-de-vita">
-          <img src="/img/burger.jpg" alt="Burger de vită cu cartofi prăjiți și sosuri" loading="lazy" />
-          <div class="rec__body">
-            <span class="chip chip--gold">Recomandat</span>
-            <h3>Burger carne de vită</h3>
-            <p>Suculent, cu legume proaspete, servit cu sosuri.</p>
-            <div class="rec__foot"><span class="price">38 lei</span><button class="add" type="button" data-add="burger-carne-de-vita">Adaugă</button></div>
-          </div>
-        </article>
-        <article class="rec rec--pattern reveal" data-id="platou-mix-grill">
-          <div class="rec__art" aria-hidden="true"><span>1 kg</span></div>
-          <div class="rec__body">
-            <span class="chip">Pentru familie</span>
-            <h3>Platou mix grill</h3>
-            <p>Ceafă de porc, cotlet, pulpă de pui dezosată, cârnăciori, cartofi la tavă cu usturoi și salată de ardei copt.</p>
-            <div class="rec__foot"><span class="price">220 lei</span><button class="add" type="button" data-add="platou-mix-grill">Adaugă</button></div>
-          </div>
-        </article>
-        <article class="rec rec--photo reveal" data-id="ceafa-de-porc-cu-sos-de-cascaval">
-          <img src="/img/ceafa.jpg" alt="Ceafă de porc cu sos și garnitură" loading="lazy" style="object-position:50% 60%" />
-          <div class="rec__body">
-            <span class="chip">Din grătar</span>
-            <h3>Ceafă de porc cu sos de cașcaval</h3>
-            <p>230 g de ceafă la grătar cu 100 g de sos cremos de cașcaval.</p>
-            <div class="rec__foot"><span class="price">40 lei</span><button class="add" type="button" data-add="ceafa-de-porc-cu-sos-de-cascaval">Adaugă</button></div>
-          </div>
-        </article>
-        <article class="rec rec--pattern rec--red reveal" data-id="papanasi-cu-dulceata-de-afine-si-smantana">
-          <div class="rec__art" aria-hidden="true"><span>de casă</span></div>
-          <div class="rec__body">
-            <span class="chip">Desert</span>
-            <h3>Papanași cu dulceață de afine</h3>
-            <p>Pufoși, cu smântână și dulceață de afine. Exact ca la bunica.</p>
-            <div class="rec__foot"><span class="price">17 lei</span><button class="add" type="button" data-add="papanasi-cu-dulceata-de-afine-si-smantana">Adaugă</button></div>
-          </div>
-        </article>
-      </div>
-      <div class="daily reveal">
-        <div>
-          <p class="head__kicker">Zilnic, preparat proaspăt</p>
-          <h3>Meniul zilei · <span>25 lei</span></h3>
-          <p>Sună-ne să afli ce am gătit azi, sau adaugă-l direct în comandă.</p>
-        </div>
-        <div class="daily__actions">
-          <button class="btn btn--red" type="button" data-add="meniul-zilei">Adaugă în coș</button>
-          <a class="btn btn--outline" href="tel:+40765466777">Ce gătim azi?</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MENIU -->
-    <section class="menu section" id="meniu">
-      <header class="head reveal">
-        <p class="head__kicker">Comandă online</p>
-        <h2>Meniul nostru</h2>
-        <p class="head__sub">Alege preparatele, adaugă-le în coș și trimite comanda. Te sunăm noi pentru confirmare.</p>
+    <!-- MENU -->
+    <section class="menu sec" id="meniu">
+      <header class="sec__head reveal">
+        <p class="eyebrow">I · Comandă online</p>
+        <h2>Meniul <em>casei</em></h2>
+        <p class="sec__lead">Alege, adaugă în comandă și trimite. Te sunăm noi pentru confirmare. Livrare sau ridicare personală, plata cash sau card.</p>
       </header>
 
-      <div class="menu__bar">
-        <div class="menu__tools">
-          <label class="search">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search" /></svg>
+      <div class="picks reveal">
+        <article class="pick">
+          <img src="/img/burger.jpg" alt="Burger de vită cu cartofi prăjiți" loading="lazy" />
+          <div class="pick__txt"><span>Bucătarul recomandă</span><h3>Burger carne de vită</h3><p class="pick__row"><b>38 lei</b><button class="add-txt" type="button" data-add="burger-carne-de-vita">+ Adaugă</button></p></div>
+        </article>
+        <article class="pick">
+          <img src="/img/ceafa.jpg" alt="Ceafă de porc cu sos de cașcaval" loading="lazy" style="object-position:50% 62%" />
+          <div class="pick__txt"><span>Din grătar</span><h3>Ceafă de porc cu sos de cașcaval</h3><p class="pick__row"><b>40 lei</b><button class="add-txt" type="button" data-add="ceafa-de-porc-cu-sos-de-cascaval">+ Adaugă</button></p></div>
+        </article>
+        <article class="pick pick--text">
+          <div class="pick__txt"><span>Zilnic, gătit proaspăt</span><h3>Meniul zilei</h3><p>Sună să afli ce gătim azi, sau adaugă-l direct în comandă.</p><p class="pick__row"><b>25 lei</b><button class="add-txt" type="button" data-add="meniul-zilei">+ Adaugă</button></p></div>
+        </article>
+      </div>
+
+      <div class="book-ui reveal">
+        <aside class="book-ui__index">
+          <label class="find">
             <span class="sr-only">Caută în meniu</span>
-            <input type="search" id="search" placeholder="Caută: papanași, pizza, ciorbă…" autocomplete="off" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search" /></svg>
+            <input id="search" type="search" placeholder="Caută un preparat…" autocomplete="off" />
           </label>
-          <div class="filters" role="group" aria-label="Filtre">
-            <button type="button" class="filter" data-filter="veg" aria-pressed="false">🌿 Vegetarian</button>
-            <button type="button" class="filter" data-filter="picant" aria-pressed="false">🌶 Picant</button>
-            <button type="button" class="filter" data-filter="disponibil" aria-pressed="false">Doar disponibile</button>
+          <div class="toggles" role="group" aria-label="Filtre">
+            <button type="button" data-filter="veg" aria-pressed="false">Vegetarian</button>
+            <button type="button" data-filter="picant" aria-pressed="false">Picant</button>
+            <button type="button" data-filter="disponibil" aria-pressed="false">Disponibile</button>
           </div>
+          <ol class="chapters" id="chapters" role="tablist" aria-label="Categorii"></ol>
+        </aside>
+        <div class="book-ui__stage">
+          <div class="page" id="page" role="tabpanel" aria-live="polite"></div>
         </div>
-        <nav class="cats" id="cats" aria-label="Categorii meniu"></nav>
       </div>
+      <p class="menu__note">Pizza și focaccia la pachet: +2 lei ambalaj. Băuturile au garanție SGR de 0,50 lei. Etichetarea alergenilor este disponibilă la cerere.</p>
+    </section>
 
-      <div class="menu__list" id="menu-list" aria-live="polite"></div>
-      <p class="menu__empty" id="menu-empty" hidden>Nu am găsit nimic. Încearcă alt cuvânt.</p>
-      <p class="menu__note">Pizza și focaccia la pachet: +2 lei ambalaj (carton). Băuturile au garanție SGR de 0,50 lei. Ketchup-ul se poate adăuga din „Sosuri &amp; extra”. Etichetarea alergenilor este disponibilă la cerere.</p>
+    <!-- TERASA -->
+    <section class="terrace" id="terasa">
+      <div class="terrace__img"><img src="/img/terasa.jpg" alt="Terasa Casa Românească cu mese rotunde și scaune împletite" loading="lazy" /></div>
+      <div class="terrace__card reveal">
+        <p class="eyebrow">II · Terasa</p>
+        <h2>Terasa <em>„Casa Românească”</em></h2>
+        <p>Un spațiu cald, cu pereți de cărămidă, lemn și perdele ușoare, unde prânzul se prelungește și serile trec greu. Potrivită pentru mese în familie, întâlniri cu prietenii, aniversări și evenimente mici.</p>
+        <div class="terrace__btns">
+          <a href="#rezervari" class="btn btn--gold">Rezervă pe terasă</a>
+          <a href="tel:+40765466777" class="btn btn--line">Evenimente: sună-ne</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAZARE -->
+    <section class="stay sec" id="cazare">
+      <header class="sec__head sec__head--left reveal">
+        <p class="eyebrow">III · Cazare</p>
+        <h2>Cazare în <em>Rovinari</em></h2>
+        <p class="sec__lead">Servicii de cazare oferite de Rovimob SRL. Camere cu paturi single sau duble, ori, la cerere, pe bază de contract pe termen lung, cu mai multe paturi în cameră.</p>
+      </header>
+
+      <div class="stay__grid">
+        <div class="gallery reveal">
+          <figure class="g g--a"><img src="/img/cladire.jpg" alt="Clădirea cu camere de cazare și restaurantul la parter" loading="lazy" /></figure>
+          <figure class="g"><img src="/img/camera-1.jpg" alt="Cameră cu două paturi single" loading="lazy" /></figure>
+          <figure class="g"><img src="/img/camera-2.jpg" alt="Cameră cu pat dublu" loading="lazy" /></figure>
+          <figure class="g"><img src="/img/baie.jpg" alt="Baie modernă cu faianță" loading="lazy" /></figure>
+        </div>
+
+        <div class="stay__info reveal">
+          <ul class="amen">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wifi" /></svg>Wi-Fi gratuit</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tv" /></svg>TV</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-snow" /></svg>Aer condiționat</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fridge" /></svg>Frigider</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cam" /></svg>Parcare supravegheată video</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bed" /></svg>Paturi single sau duble</li>
+          </ul>
+          <p class="stay__note">La parterul clădirii ai la dispoziție <b>restaurantul</b> și o <b>frizerie</b>. Pentru perioade mai lungi oferim <b>discount</b> sau <b>contract de colaborare</b>.</p>
+          <div class="stay__phones">
+            <a href="tel:+40765453235">0765 453 235</a>
+            <a href="tel:+40722660821">0722 660 821</a>
+          </div>
+
+          <form class="form form--dark" id="stay-form" novalidate>
+            <p class="form__title">Solicită o ofertă de cazare</p>
+            <div class="grid">
+              <label class="f"><span>Sosire</span><input type="date" name="checkin" id="s-in" required /></label>
+              <label class="f"><span>Plecare</span><input type="date" name="checkout" id="s-out" required /></label>
+              <label class="f"><span>Persoane</span><select name="guests" id="s-guests"></select></label>
+              <label class="f"><span>Nume</span><input type="text" name="name" autocomplete="name" required maxlength="80" /></label>
+              <label class="f"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel" required maxlength="20" /></label>
+              <label class="f"><span>E-mail <em>(opțional)</em></span><input type="email" name="email" autocomplete="email" maxlength="120" /></label>
+              <label class="f f--wide"><span>Mențiuni <em>(opțional)</em></span><textarea name="notes" rows="2" maxlength="500" placeholder="Firmă / contract pe termen lung, număr de camere…"></textarea></label>
+            </div>
+            <p class="form__err" role="alert" hidden></p>
+            <button class="btn btn--gold btn--wide" type="submit">Trimite solicitarea</button>
+          </form>
+          <div class="done" id="stay-done" hidden tabindex="-1"></div>
+        </div>
+      </div>
     </section>
 
     <!-- REZERVĂRI -->
-    <section class="book section" id="rezervari">
-      <div class="book__inner">
-        <div class="book__intro reveal">
-          <p class="head__kicker head__kicker--light">Rezervări</p>
-          <h2>Rezervă o masă</h2>
-          <p>Vii cu familia sau cu prietenii? Spune-ne când și câți sunteți, iar noi vă pregătim masa. Pentru grupuri mari sau evenimente, sună-ne direct.</p>
-          <a class="book__phone" href="tel:+40765466777">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone" /></svg> 0765 466 777
-          </a>
-        </div>
+    <section class="reserve sec" id="rezervari">
+      <div class="invite reveal">
+        <span class="corner corner--tl" aria-hidden="true"></span><span class="corner corner--tr" aria-hidden="true"></span>
+        <span class="corner corner--bl" aria-hidden="true"></span><span class="corner corner--br" aria-hidden="true"></span>
+        <p class="eyebrow">IV · Rezervări</p>
+        <h2>Vă așteptăm <em>la masă</em></h2>
+        <p class="invite__lead">Spune-ne când veniți și câți sunteți. Pentru grupuri mari și evenimente, sună la <a href="tel:+40765466777">0765 466 777</a>.</p>
 
-        <form class="form book__form reveal" id="book-form" novalidate>
-          <div class="form__grid">
-            <label class="field"><span>Data</span><input type="date" name="date" id="b-date" required /></label>
-            <label class="field"><span>Ora</span><select name="time" id="b-time" required></select></label>
-            <label class="field"><span>Persoane</span>
-              <select name="guests" id="b-guests" required></select>
-            </label>
-            <label class="field"><span>Nume</span><input type="text" name="name" autocomplete="name" required maxlength="80" /></label>
-            <label class="field"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder="07…" /></label>
-            <label class="field"><span>E-mail <em>(opțional)</em></span><input type="email" name="email" autocomplete="email" maxlength="120" /></label>
-            <label class="field field--wide"><span>Mențiuni <em>(opțional)</em></span><textarea name="notes" rows="2" maxlength="500" placeholder="Zi de naștere, scaun pentru copii, alergii…"></textarea></label>
+        <form class="form" id="book-form" novalidate>
+          <div class="grid">
+            <label class="f"><span>Data</span><input type="date" name="date" id="b-date" required /></label>
+            <label class="f"><span>Ora</span><select name="time" id="b-time" required></select></label>
+            <label class="f"><span>Persoane</span><select name="guests" id="b-guests"></select></label>
+            <label class="f"><span>Nume</span><input type="text" name="name" autocomplete="name" required maxlength="80" /></label>
+            <label class="f"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel" required maxlength="20" /></label>
+            <label class="f"><span>E-mail <em>(opțional)</em></span><input type="email" name="email" autocomplete="email" maxlength="120" /></label>
+            <label class="f f--wide"><span>Mențiuni <em>(opțional)</em></span><textarea name="notes" rows="2" maxlength="500" placeholder="Aniversare, masă pe terasă, scaun pentru copii…"></textarea></label>
           </div>
-          <p class="form__error" role="alert" hidden></p>
-          <button class="btn btn--red btn--block" type="submit">Trimite rezervarea</button>
+          <p class="form__err" role="alert" hidden></p>
+          <button class="btn btn--gold btn--wide" type="submit">Trimite rezervarea</button>
         </form>
+        <div class="done" id="book-done" hidden tabindex="-1"></div>
+      </div>
+    </section>
 
-        <div class="done book__done" id="book-done" hidden tabindex="-1">
-          <div class="done__icon" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-16" /></svg></div>
-          <h3>Mulțumim!</h3>
-          <p id="book-done-text"></p>
-          <p class="done__ref">Cod rezervare: <b id="book-ref"></b></p>
-          <button class="btn btn--outline" type="button" id="book-again">Altă rezervare</button>
+    <!-- CARIERE -->
+    <section class="jobs" id="cariere">
+      <div class="jobs__inner reveal">
+        <div>
+          <p class="eyebrow">V · Angajări</p>
+          <h2>Vino în echipa <em>Casa Românească!</em></h2>
+          <p>Dacă vrei să aplici pentru un post, trimite-ne CV-ul pe e-mail și menționează în titlu postul pentru care aplici. Te adăugăm în baza noastră de date și te contactăm.</p>
         </div>
+        <form class="jobs__form" id="jobs-form">
+          <label class="f"><span>Postul dorit</span><input type="text" id="job-role" placeholder="ex. Ospătar, Bucătar, Livrator" maxlength="60" /></label>
+          <a class="btn btn--gold" id="job-mail" href="mailto:resurseumane@casa-romaneasca.eu?subject=CV%20-%20">Trimite CV-ul pe e-mail</a>
+          <p class="jobs__mail">resurseumane@casa-romaneasca.eu</p>
+        </form>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact section" id="contact">
+    <section class="contact sec" id="contact">
       <div class="contact__grid">
-        <div class="contact__info reveal">
-          <p class="head__kicker">Te așteptăm</p>
-          <h2>Casa Românească</h2>
-          <p class="contact__lead">Un loc cu mâncare gătită ca acasă, porții generoase și prețuri corecte. Suntem în Rovinari, pe strada Prieteniei.</p>
-          <dl class="contact__list">
+        <div class="reveal">
+          <p class="eyebrow">VI · Contact</p>
+          <h2>Ne găsești <em>aici</em></h2>
+          <dl class="info">
             <div><dt>Adresă</dt><dd>Str. Prieteniei, Bloc A8<br />215400 Rovinari, jud. Gorj</dd></div>
-            <div><dt>Telefon</dt><dd><a href="tel:+40765466777">+40 765 466 777</a></dd></div>
+            <div><dt>Restaurant</dt><dd><a href="tel:+40765466777">0765 466 777</a></dd></div>
+            <div><dt>Cazare</dt><dd><a href="tel:+40765453235">0765 453 235</a> · <a href="tel:+40722660821">0722 660 821</a></dd></div>
             <div><dt>E-mail</dt><dd><a href="mailto:contact@casa-romaneasca.eu">contact@casa-romaneasca.eu</a></dd></div>
             <div><dt>Program</dt><dd id="hours"></dd></div>
           </dl>
-          <div class="contact__btns">
-            <a class="btn btn--red" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Strada+Prieteniei+Rovinari+Gorj">Indicații rutiere</a>
-            <a class="btn btn--outline" href="tel:+40765466777">Sună acum</a>
-          </div>
+          <a class="btn btn--line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Strada+Prieteniei+Rovinari+Gorj">Indicații rutiere ↗</a>
         </div>
-        <div class="contact__map reveal">
-          <iframe title="Hartă: Casa Românească, Str. Prieteniei, Rovinari" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        <div class="map reveal">
+          <iframe title="Hartă: Str. Prieteniei, Rovinari" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             src="https://maps.google.com/maps?q=Strada%20Prieteniei%2C%20Rovinari%2C%20Gorj&z=16&output=embed"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="band band--footer" aria-hidden="true"></div>
-  <footer class="footer">
-    <div class="footer__inner">
-      <a href="#acasa" class="logo logo--light"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#house" /></svg><span class="logo__text">Casa <b>Românească</b></span></a>
-      <p>Str. Prieteniei, Bloc A8, Rovinari · <a href="tel:+40765466777">0765 466 777</a> · <a href="mailto:contact@casa-romaneasca.eu">contact@casa-romaneasca.eu</a></p>
-      <p class="footer__legal">© <span id="year"></span> Revege SRL · CUI RO23739968 · <a href="https://anpc.ro" target="_blank" rel="noopener">ANPC</a></p>
-    </div>
+  <div class="stitchline" aria-hidden="true"></div>
+  <footer class="foot">
+    <p class="foot__name">Casa Românească</p>
+    <p>Str. Prieteniei, Bloc A8, Rovinari · <a href="tel:+40765466777">0765 466 777</a> · <a href="mailto:contact@casa-romaneasca.eu">contact@casa-romaneasca.eu</a></p>
+    <p class="foot__legal">© <span id="year"></span> Revege SRL (restaurant) · Rovimob SRL (cazare) · <a href="https://anpc.ro" target="_blank" rel="noopener">ANPC</a></p>
   </footer>
 
-  <!-- CART DRAWER -->
-  <div class="scrim" id="scrim" hidden></div>
-  <aside class="cart" id="cart" aria-label="Coșul tău" aria-hidden="true" tabindex="-1">
-    <div class="cart__head">
-      <h2>Coșul tău</h2>
-      <button class="cart__close" type="button" aria-label="Închide coșul">×</button>
-    </div>
+  <!-- ORDER BAR + DIALOG -->
+  <div class="obar" id="obar" hidden>
+    <span class="obar__info"><b id="obar-count">0</b> produse · <b id="obar-total">0 lei</b></span>
+    <button type="button" class="btn btn--gold btn--sm" id="obar-open">Vezi comanda</button>
+  </div>
 
-    <div class="cart__body" id="cart-body">
-      <div class="cart__empty" id="cart-empty">
-        <div class="cart__empty-art" aria-hidden="true"></div>
-        <p>Coșul e gol. Hai să-l umplem!</p>
-        <a href="#meniu" class="btn btn--red" data-close>Vezi meniul</a>
-      </div>
-      <ul class="cart__items" id="cart-items"></ul>
-
-      <form class="form cart__form" id="order-form" novalidate hidden>
-        <fieldset class="seg" aria-label="Mod de livrare">
-          <label><input type="radio" name="mode" value="livrare" checked /><span>Livrare</span></label>
-          <label><input type="radio" name="mode" value="ridicare" /><span>Ridicare personală</span></label>
-        </fieldset>
-
-        <dl class="totals" id="totals"></dl>
-
-        <div class="form__grid form__grid--one">
-          <label class="field"><span>Nume</span><input type="text" name="name" autocomplete="name" required maxlength="80" /></label>
-          <label class="field"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder="07…" /></label>
-          <label class="field" id="addr-field"><span>Adresa de livrare</span><input type="text" name="address" autocomplete="street-address" required maxlength="200" placeholder="Strada, număr, bloc, scară, apartament" /></label>
-          <label class="field"><span>Mențiuni <em>(opțional)</em></span><textarea name="notes" rows="2" maxlength="500" placeholder="Fără ceapă, interfon…"></textarea></label>
-        </div>
-
-        <fieldset class="seg seg--small" aria-label="Metoda de plată">
-          <label><input type="radio" name="payment" value="numerar" checked /><span>Numerar</span></label>
-          <label><input type="radio" name="payment" value="card" /><span>Card</span></label>
-        </fieldset>
-
-        <p class="form__error" role="alert" hidden></p>
-        <button class="btn btn--red btn--block" type="submit" id="order-submit">Trimite comanda</button>
-        <p class="cart__small" id="delivery-note">Taxa de livrare (dacă e cazul) și timpul estimat îți sunt confirmate telefonic.</p>
-      </form>
-
-      <div class="done" id="order-done" hidden tabindex="-1">
-        <div class="done__icon" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-16" /></svg></div>
-        <h3>Comanda a fost trimisă!</h3>
-        <p id="order-done-text"></p>
-        <p class="done__ref">Număr comandă: <b id="order-ref"></b></p>
-        <button class="btn btn--outline" type="button" id="order-again">Comandă nouă</button>
+  <div class="dlg" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="dlg__scrim" data-close></div>
+    <div class="dlg__panel" tabindex="-1">
+      <header class="dlg__head">
+        <h2 id="cart-title">Comanda ta</h2>
+        <button type="button" class="dlg__x" data-close aria-label="Închide">×</button>
+      </header>
+      <div class="dlg__body">
+        <p class="empty" id="cart-empty">Comanda e goală. Alege ceva bun din meniu.</p>
+        <ul class="lines" id="cart-items"></ul>
+        <form class="form form--dark" id="order-form" novalidate hidden>
+          <fieldset class="seg" aria-label="Mod de livrare">
+            <label><input type="radio" name="mode" value="livrare" checked /><span>Livrare</span></label>
+            <label><input type="radio" name="mode" value="ridicare" /><span>Ridicare personală</span></label>
+          </fieldset>
+          <dl class="totals" id="totals"></dl>
+          <div class="grid grid--one">
+            <label class="f"><span>Nume</span><input type="text" name="name" autocomplete="name" required maxlength="80" /></label>
+            <label class="f"><span>Telefon</span><input type="tel" name="phone" autocomplete="tel" required maxlength="20" /></label>
+            <label class="f" id="addr-field"><span>Adresa de livrare</span><input type="text" name="address" autocomplete="street-address" required maxlength="200" placeholder="Strada, număr, bloc, scară, apartament" /></label>
+            <label class="f"><span>Mențiuni <em>(opțional)</em></span><textarea name="notes" rows="2" maxlength="500" placeholder="Fără ceapă, interfon…"></textarea></label>
+          </div>
+          <fieldset class="seg" aria-label="Plată">
+            <label><input type="radio" name="payment" value="numerar" checked /><span>Numerar</span></label>
+            <label><input type="radio" name="payment" value="card" /><span>Card</span></label>
+          </fieldset>
+          <p class="form__err" role="alert" hidden></p>
+          <button class="btn btn--gold btn--wide" type="submit" id="order-submit">Trimite comanda</button>
+          <p class="small" id="delivery-note"></p>
+        </form>
+        <div class="done" id="order-done" hidden tabindex="-1"></div>
       </div>
     </div>
-  </aside>
+  </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!-- Icons -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="house" viewBox="0 0 40 40">
-      <path d="M5 19 20 6l15 13" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
-      <path d="M9 17v17h22V17" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+      <path d="M5 19 20 6l15 13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M9 17v17h22V17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
       <path d="M20 16l3 3-3 3-3-3z M20 24l3 3-3 3-3-3z M14 22l2 2-2 2-2-2z M26 22l2 2-2 2-2-2z" fill="currentColor" />
     </symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor" /></symbol>
-    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7Z M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></symbol>
-    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2z M13 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /><circle cx="6" cy="18" r="2" fill="currentColor" /><circle cx="17" cy="18" r="2" fill="currentColor" /></symbol>
-    <symbol id="i-table" viewBox="0 0 24 24"><path d="M3 9h18 M5 9v11 M19 9v11 M8 5h8l2 4H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
-    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" /><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7Z M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="m20 20-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /><circle cx="12" cy="19" r="1.3" fill="currentColor" /></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" /></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2v20M4 7l16 10M4 17 20 7M9 3l3 3 3-3M9 21l3-3 3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></symbol>
+    <symbol id="i-fridge" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M6 10h12M9 5v3M9 13v4" stroke="currentColor" stroke-width="1.6" /></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10l5-3v10l-5-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3M7 11.5a1.5 1.5 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></symbol>
   </svg>
 
   <script src="/script.js" defer></script>
